@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="static/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Portfolio website complete</title>
+        <style>
+            body {
+            background: linear-gradient(135deg, #ac01d3, #afaeae, #be00a8);
+        }
+
+        .bubble {
+            position: absolute;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.7);
+            animation: bubbleAnimation 2s ease-out forwards;
+            pointer-events: none;
+        }
+
+        @keyframes bubbleAnimation {
+            0% {
+                transform: scale(0);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div>
+                    <!--===== HEADER =====-->
+        <header class="l-header" style="background-color: rgb(48, 216, 216);">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo"><i>Prathmesh</i></a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hello, I'am <br><span class="home__title-color">Prathmesh Ravekar</span><br> Web Designer</h1>
+
+                    <a href="#contact" class="button" class="nav__link">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/prathmesh-ravekar-7a91592b9/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/prathm_1812/" class="home__social-icon"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.facebook.com/prathmesh.ravekar" class="home__social-icon"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://github.com/prathm2003" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.youtube.com/@prathmeshravekar7816" class="home__social-icon"><i class='bx bxl-youtube'></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" fill="rgb(42, 167, 167)" />
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" fill="rgb(42, 167, 167)" />
+                            <image class="home__blob-img" x="50" y="60" href="static/img/perfil.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="static/img/about1.jpg" style="height: 500px;width: 450px;position: relative;margin-top: 60px;" alt="">
+                        <img src="static/img/about2.jpeg" style="height: 500px;width: 450px;position: relative;margin-top: 30px;" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Prathmesh</h2>
+                        <p class="about__text">I am a web developer with 3 years of experience in designing, developing, and maintaining dynamic, responsive, and user-friendly websites and web applications. Over the years, I’ve honed my skills in both front-end and back-end development, creating seamless user experiences and robust applications that cater to diverse business needs. My expertise lies in a variety of modern technologies and development frameworks, including:</p>
+
+                            <p class="about__text"><b> HTML, CSS, and JavaScript: </b> I’m proficient in building the core structure and styling of websites, ensuring that they not only function well but also provide a visually engaging experience. I use HTML5 for structuring content, CSS3 for responsive design, and JavaScript for interactivity, animation, and DOM manipulation.</p>
+                            
+                            <p class="about__text"><b>React and Django: </b> I specialize in creating high-performance, maintainable user interfaces using modern JavaScript frameworks. Whether it's a dynamic, data-driven application or a simple landing page, I can design scalable front-end solutions using React for component-based development, Angular for large-scale applications, or Vue.js for progressive enhancements.</p>
+                            
+                            <p class="about__text"><b> Node.js and Express.js:</b> On the back-end, I leverage Node.js to build fast, scalable server-side applications. I use Express.js to simplify routing, middleware integration, and HTTP requests, ensuring my applications are efficient and performant.</p>
+                            
+                            <p class="about__text"><b> Database Technologies:</b> I have experience working with both SQL and NoSQL databases, including MongoDB, MySQL, and PostgreSQL, allowing me to design flexible and scalable data models to meet the specific needs of various applications.</p>
+                            
+                            <p class="about__text"><b> Version Control with Git:</b> I rely on Git for version control, ensuring that my code is well-managed and collaborative. Whether working individually or as part of a team, Git allows me to track changes, branch, and merge efficiently.</p>
+                            
+                            <p class="about__text"> As a passionate developer, I don’t just write code; I focus on creating elegant, efficient, and maintainable solutions. Whether I’m developing a small feature, debugging an issue, or working on a full-scale project, I always aim to enhance user experience, optimize performance, and produce aesthetically pleasing, user-centric designs. My goal is to bring ideas to life through clean code, innovative solutions, and a user-first mindset.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid" >
+                    <div class="popup">
+                        <!-- top bar -->
+                        <div class="top-bar">
+                            <p class="image-name">skill1.png</p>
+                            <span class="close-btn"><img src="static/img/skill/cross.png" alt="Close"></span>
+                        </div>
+                        <!-- arrows -->
+                        <button class="arrow-btn left-arrow"><img src="img/arrow.png" alt=""></button>
+                        <button class="arrow-btn right-arrow"><img src="img/arrow.png" alt=""></button>
+                        <!-- image -->
+                        <img src="static/img/skill/skill1.png" class="large-image" alt="">
+                        <!-- image-index -->
+                        <h1 class="index">01</h1>
+                    </div>
+
+                    <div class="gallery">
+                        <div class="gallery-image">
+                            <img src="static/img/skill/skill1.png" alt="" class="image">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="static/img/skill/skill2.png" alt="" class="image">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="static/img/skill/skill3.png" alt="" class="image">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="static/img/skill/skill4.png" alt="" class="image">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="static/img/skill/skill5.png" alt="" class="image">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="static/img/skill/skill6.png" alt="" class="image">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="static/img/skill/skill7.png" alt="" class="image">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="static/img/skill/skill8.png" alt="" class="image">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="static/img/skill/skill9.png" alt="" class="image">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="static/img/skill/skill10.png" alt="" class="image">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="static/img/skill/skill11.png" alt="" class="image">
+                        </div>
+                        <div class="gallery-image">
+                            <img src="static/img/skill/skill12.png" alt="" class="image">
+                        </div>
+                    </div>
+          
+                    
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="static/img/projects/project1.png" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="static/img/projects/project2.png" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="static/img/projects/project3.png" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="static/img/projects/project4.png" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="static/img/projects/project5.png" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="static/img/projects/project6.png" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <!-- Contact Section -->
+<section class="contact section" id="contact">
+    <h2 class="section-title">Feedback</h2>
+
+    <div class="contact__container bd-grid">
+        <form method="POST" action="{% url 'home' %}" class="contact__form" id="contactForm">
+            {% csrf_token %}
+            <input type="text" name="name" placeholder="Name" class="contact__input" required>
+            <input type="email" name="email" placeholder="Email" class="contact__input" required>
+            <textarea name="message" placeholder="Message" rows="10" class="contact__input" required></textarea>
+            <button type="submit" class="contact__button button">Enviar</button>
+        </form>
+    </div>
+</section>
+
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Contact</p>
+            <h3>Ph.no : 8482817133</h3>
+            <h3>Mail : prathmeshravekar2003@gmail.com</h3>
+            <div class="footer__social">
+                    <a href="https://www.linkedin.com/in/prathmesh-ravekar-7a91592b9/" class="footer__icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.instagram.com/prathm_1812/" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.facebook.com/prathmesh.ravekar" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://github.com/prathm2003" class="footer__icon"><i class='bx bxl-github' ></i></a>
+                    <a href="https://www.youtube.com/@prathmeshravekar7816" class="footer__icon"><i class='bx bxl-youtube'></i></a>
+            </div>
+            <p class="footer__copy">&#169;All rigths reserved</p>
+        </footer>
+        </div>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="static/js/main.js"></script>
+        <script>
+            document.body.addEventListener('click', (e) => {
+                // Create bubble element
+                const bubble = document.createElement('div');
+                const size = Math.random() * 100 + 50; // Random size between 50px and 150px
+    
+                // Set bubble styles
+                bubble.style.width = `${size}px`;
+                bubble.style.height = `${size}px`;
+                bubble.style.left = `${e.pageX - size / 2}px`; // Center it on the click position
+                bubble.style.top = `${e.pageY - size / 2}px`;   // Center it on the click position
+                document.body.appendChild(bubble);
+    
+                // Set up animation on the bubble element
+                bubble.classList.add('bubble');
+    
+                // Remove the bubble after animation completes
+                setTimeout(() => {
+                    bubble.remove();
+                }, 2000); // 2 seconds duration to match the animation duration
+            });
+        </script>
+        <script>
+            const images = [...document.querySelectorAll('.image')];
+
+            // popup
+
+            const popup = document.querySelector('.popup');
+            const closeBtn = document.querySelector('.close-btn');
+            const imageName = document.querySelector('.image-name');
+            const largeImage = document.querySelector('.large-image');
+            const imageIndex = document.querySelector('.index');
+            const leftArrow = document.querySelector('.left-arrow');
+            const rightArrow = document.querySelector('.right-arrow');
+
+            let index = 0; // will track our current image;
+
+            images.forEach((item, i) => {
+                item.addEventListener('click', () => {
+                    updateImage(i);
+                    popup.classList.toggle('active');
+                })
+            })
+
+            const updateImage = (i) => {
+                let path = `static/img/skill/skill${i+1}.png`;
+                largeImage.src = path;
+                imageName.innerHTML = path;
+                imageIndex.innerHTML = `${i+1}`;
+                index = i;
+            }
+
+            closeBtn.addEventListener('click', () => {
+                popup.classList.toggle('active');
+            })
+
+            leftArrow.addEventListener('click', () => {
+                if(index > 0){
+                    updateImage(index - 1);
+                }
+            })
+
+            rightArrow.addEventListener('click', () => {
+                if(index < images.length - 1){
+                    updateImage(index + 1);
+                }
+            })
+        </script>
+        <script>
+            // Check if a success message is present in the context
+            {% if success %}
+                alert('Feedback submitted successfully!');
+            {% endif %}
+        </script>
+    </body>
+</html>
